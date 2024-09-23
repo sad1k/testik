@@ -1,0 +1,73 @@
+.App {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  row-gap: 140px;
+  flex-direction: column;
+  padding-top: 150px;
+
+  @media screen and (max-width: 567px) {
+    padding-top: 0;
+    row-gap: 40px;
+    height: 83vh;
+  }
+}
+
+.borderGradient {
+  position: absolute;
+  top: 2%;
+  width: 5px;
+  border-left: 2px solid transparent;
+  background: linear-gradient(180deg, rgb(56, 119, 238), rgb(239, 93, 168));
+  @media screen and (max-width: 567px) {
+    position: inherit;
+    border: none;
+    background: none;
+  }
+}
+
+.title {
+  font-size: 56px;
+  margin-left: 78px;
+  color: rgb(66, 86, 122);
+  font-weight: 700;
+  text-align: left;
+
+  @media screen and (max-width: 567px) {
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 59px;
+  }
+}
+
+.lineX {
+  position: absolute;
+  left: 0;
+  top: 36%;
+  width: 100%;
+  height: 2px;
+  opacity: 0.1;
+  background-color: grey;
+  transform: translateY(-50%);
+  z-index: -1;
+
+  @media screen and (max-width: 567px) {
+    display: none;
+  }
+}
+
+.lineY {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  opacity: 0.1;
+  z-index: -1; // Высокий z-index, чтобы перекрывать другие элементы
+  height: 100%; // Линия на всю высоту экрана
+  background-color: grey;
+  @media screen and (max-width: 567px) {
+    display: none;
+  }
+}

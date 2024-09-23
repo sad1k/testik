@@ -1,0 +1,15 @@
+{
+  "include": ["src/**/*"],  // Ensure it includes all files in the src folder
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react", // or "react" for older JSX runtime
+    "allowJs": true, // Enables compilation of `.js` files
+    "target": "es5",
+    "noEmit":true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

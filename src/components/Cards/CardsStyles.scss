@@ -1,0 +1,23 @@
+.cards {
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.cardsButton{
+  padding: 20px;
+  @media screen and (max-width: 567px) {
+    display: none;
+  }
+}
+
+
+.swiper-pagination-bullet{
+  background: rgba(66, 86, 122, 0.4);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(66, 86, 122, 1);
+}
